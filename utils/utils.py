@@ -1,7 +1,7 @@
 import torch
 from torch.nn.functional import log_softmax, softmax
 import numpy as np
-from models.beam import Beam
+from Spelling_Correction_VHV.models.beam import Beam
 
 
 

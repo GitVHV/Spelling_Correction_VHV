@@ -5,16 +5,16 @@ import numpy as np
 import os
 import time
 from torch.utils.data import DataLoader
-from dataset.vocab import Vocab
-from dataset.add_noise import SynthesizeData
-from params import *
-from models.seq2seq import Seq2Seq
-from models.seq2seq_without_attention import Seq2Seq_WithoutAtt
-from utils.logger import Logger
-from dataset.autocorrect_dataset import AutoCorrectDataset
-from models.loss import LabelSmoothingLoss
-from utils.utils import translate, translate_beam_search, batch_translate_beam_search
-from utils.metrics import compute_accuracy
+from Spelling_Correction_VHV.dataset.vocab import Vocab
+from Spelling_Correction_VHV.dataset.add_noise import SynthesizeData
+from Spelling_Correction_VHV.params import *
+from Spelling_Correction_VHV.models.seq2seq import Seq2Seq
+from Spelling_Correction_VHV.models.seq2seq_without_attention import Seq2Seq_WithoutAtt
+from Spelling_Correction_VHV.utils.logger import Logger
+from Spelling_Correction_VHV.dataset.autocorrect_dataset import AutoCorrectDataset
+from Spelling_Correction_VHV.models.loss import LabelSmoothingLoss
+from Spelling_Correction_VHV.utils.utils import translate, translate_beam_search, batch_translate_beam_search
+from Spelling_Correction_VHV.utils.metrics import compute_accuracy
 
 
 class Trainer():

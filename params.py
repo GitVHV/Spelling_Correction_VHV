@@ -1,6 +1,6 @@
 print("here")
 
-DEVICE = 'gpu'
+DEVICE = 'cuda'
 ENC_EMB_DIM = 256
 DEC_EMB_DIM = 256
 ENC_HID_DIM = 512

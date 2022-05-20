@@ -1,6 +1,6 @@
 print("here")
 
-DEVICE = 'cpu'
+DEVICE = 'gpu'
 ENC_EMB_DIM = 256
 DEC_EMB_DIM = 256
 ENC_HID_DIM = 512
@@ -8,19 +8,19 @@ DEC_HID_DIM = 512
 ENC_DROPOUT = 0.5
 DEC_DROPOUT = 0.5
 
-NUM_ITERS = 80000
-BATCH_SIZE = 4
+NUM_ITERS = 1000
+BATCH_SIZE = 16
 BEAM_SEARCH = False
 PRINT_PER_ITER = 1
-VALID_PER_ITER = 500
-MAX_SAMPLE_VALID = 10000
+VALID_PER_ITER = 100
+MAX_SAMPLE_VALID = 160
 
 MAX_LR = 0.0003    # lr will inscrease from 2e-5 to MAX_LR in iter 0 -> iter NUM_ITERS * PCT_START, then decrease to 2e-5
 PCT_START = 0.1
 
-LOG = "./log/loger_luong.log"
-CHECKPOINT = './checkpoint/seq2seq_luong_checkpoint.pth'
-EXPORT = './weights/seq2seq_luong.pth'
+LOG = "/content/gdrive/MyDrive/ocr/Spelling_Correction_Vietnamese/log/loger_luong.log"
+CHECKPOINT = '/content/gdrive/MyDrive/ocr/Spelling_Correction_Vietnamese/checkpoint/seq2seq_luong_checkpoint.pth'
+EXPORT = '/content/gdrive/MyDrive/ocr/Spelling_Correction_Vietnamese/weights/seq2seq_luong.pth'
 
 MAXLEN = 46
 NGRAM = 5

@@ -6,10 +6,10 @@ class Logger():
         path, _ = os.path.split(fname)
         os.makedirs(path, exist_ok=True)
 
-        self.logger = open(fname, 'w')
+        self.logger = open(fname, 'w', encoding='utf-8')
 
     def log(self, string):
-        self.logger.write(string+'\n')
+        self.logger.write(string + '\n')
         self.logger.flush()
 
     def close(self):

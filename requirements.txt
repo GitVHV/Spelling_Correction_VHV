@@ -1,0 +1,4 @@
+python-Levenshtein
+unidecode
+streamlit
+pyngrok

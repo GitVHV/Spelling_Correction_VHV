@@ -5,7 +5,7 @@ import re
 import itertools
 import sys
 sys.path.append("..")
-from params import MAXLEN, NGRAM
+from Spelling_Correction_VHV.params import MAXLEN, NGRAM
 import numpy as np
 
 '''

@@ -19,7 +19,7 @@ index   |      sentence
 
 
 class CreateDataset():
-    def __init__(self, csv_path='../data/samples_sentence.csv', save_path="../data/list_ngrams.npy"):
+    def __init__(self, csv_path='/content/Spelling_Correction_VHV/data/samples_sentence.csv', save_path="/content/Spelling_Correction_VHV/data/list_ngrams.npy"):
         self.csv_path = csv_path
         self.alphabets_regex = '^[aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦẩẨẫẪấẤậẬbBcCdDđĐeEèÈẻẺẽẼéÉẹẸêÊềỀểỂễỄếẾệỆfFgGhHiIìÌỉỈĩĨíÍịỊjJkKlLmMnNoOòÒỏỎõÕóÓọỌôÔồỒổỔỗỖốỐộỘơƠờỜởỞỡỠớỚợỢpPqQrRsStTuUùÙủỦũŨúÚụỤưƯừỪửỬữỮứỨựỰvVwWxXyYỳỲỷỶỹỸýÝỵỴzZ0123456789!"#$%&''()*+,-./:;<=>?@[\]^_`{|}~ ]'
         self.save_path = save_path

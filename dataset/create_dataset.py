@@ -19,7 +19,7 @@ index   |      sentence
 
 
 class CreateDataset():
-    def __init__(self, csv_path='/content/Spelling_Correction_VHV/data/samples_sentence.csv', save_path="/content/Spelling_Correction_VHV/data/list_ngrams.npy"):
+    def __init__(self, csv_path='/content/gdrive/MyDrive/Spelling_Correction_VHV/data/samples_sentence.csv', save_path="/content/gdrive/MyDrive/Spelling_Correction_VHV/data/list_ngrams.npy"):
         self.csv_path = csv_path
         self.alphabets_regex = '^[aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦẩẨẫẪấẤậẬbBcCdDđĐeEèÈẻẺẽẼéÉẹẸêÊềỀểỂễỄếẾệỆfFgGhHiIìÌỉỈĩĨíÍịỊjJkKlLmMnNoOòÒỏỎõÕóÓọỌôÔồỒổỔỗỖốỐộỘơƠờỜởỞỡỠớỚợỢpPqQrRsStTuUùÙủỦũŨúÚụỤưƯừỪửỬữỮứỨựỰvVwWxXyYỳỲỷỶỹỸýÝỵỴzZ0123456789!"#$%&''()*+,-./:;<=>?@[\]^_`{|}~ ]'
         self.save_path = save_path
@@ -80,5 +80,5 @@ class CreateDataset():
 
 if __name__ == "__main__":
 
-    creater = CreateDataset(csv_path='../data/samples_sentence.csv', save_path="../data/list_ngrams.npy")
+    creater = CreateDataset(csv_path='/content/gdrive/MyDrive/Spelling_Correction_VHV/data/samples_sentence.csv', save_path="/content/gdrive/MyDrive/Spelling_Correction_VHV/data/list_ngrams.npy")
     creater.processing()

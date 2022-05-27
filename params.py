@@ -9,11 +9,11 @@ ENC_DROPOUT = 0.5
 DEC_DROPOUT = 0.5
 
 NUM_ITERS = 80000
-BATCH_SIZE = 160
+BATCH_SIZE = 128
 BEAM_SEARCH = False
 PRINT_PER_ITER = 1
 VALID_PER_ITER = 10000
-MAX_SAMPLE_VALID = 16000
+MAX_SAMPLE_VALID = 12800
 
 MAX_LR = 0.0003  # lr will inscrease from 2e-5 to MAX_LR in iter 0 -> iter NUM_ITERS * PCT_START, then decrease to 2e-5
 PCT_START = 0.1
@@ -23,6 +23,6 @@ CHECKPOINT = '/content/gdrive/MyDrive/Spelling_Correction_VHV/checkpoint/seq2seq
 EXPORT = '/content/gdrive/MyDrive/Spelling_Correction_VHV/weights/seq2seq_luong.pth'
 
 MAXLEN = 46
-NGRAM = 3
+NGRAM = 2
 alphabets = 'aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦẩẨẫẪấẤậẬbBcCdDđĐeEèÈẻẺẽẼéÉẹẸêÊềỀểỂễỄếẾệỆfFgGhHiIìÌỉỈĩĨíÍịỊjJkKlLmMnNoOòÒỏỎõÕóÓọỌôÔồỒổỔỗỖốỐộỘơƠờỜởỞỡỠớỚợỢpPqQrRsStTuUùÙủỦũŨúÚụỤưƯừỪửỬữỮứỨựỰvVwWxXyYỳỲỷỶỹỸýÝỵỴzZ0123456789!"#$%&\'()*+,-./:;<=>?@[\]^_`{|}~ ]'
 PERCENT_NOISE = 0.15  # 0 - 2 word in 5-grams
